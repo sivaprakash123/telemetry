@@ -1,4 +1,4 @@
-FROM egovio/apline-jre:8u121
+FROM openjdk:8-jre-alpine 
 
 MAINTAINER Senthil<senthil.kalimuthu@tarento.com>
 
