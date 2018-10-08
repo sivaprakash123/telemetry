@@ -1,6 +1,6 @@
 def app = "";
 def commit_id="";
-def module_name = "${env.JOB_NAME}".split("/")[-2];
+def module_name = "${env.JOB_NAME}".split("/")[-3];
 def service_name = "${env.JOB_BASE_NAME}";
 def path = "${module_name}/${service_name}"
 def build_wkflo;
