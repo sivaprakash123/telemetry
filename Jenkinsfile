@@ -1,6 +1,6 @@
 def app = "";
 def commit_id="";
-def module_name = "${env.JOB_NAME}".split("/");
+def module_name = "${env.JOB_NAME}".split("/").last();
 echo ${module_name};
 def service_name = "${env.JOB_BASE_NAME}";
 echo $service_name;
