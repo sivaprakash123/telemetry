@@ -1,9 +1,7 @@
 def app = "";
 def commit_id="";
 def module_name = "${env.JOB_NAME}".split("/").last();
-echo ${module_name};
 def service_name = "${env.JOB_BASE_NAME}";
-echo $service_name;
 def path = "${module_name}/${service_name}"
 def build_wkflo;
 def ci_image = "egovio/ci:0.0.4"
